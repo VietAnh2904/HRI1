@@ -10,6 +10,7 @@ ROS 2 package cho Bài thực hành 01. Robot mô phỏng trong Gazebo, MoveIt 2
 
 ## Cấu trúc
 
+```text
 ur_student_control/
 ├── CMakeLists.txt
 ├── include/
@@ -17,7 +18,7 @@ ur_student_control/
 ├── package.xml
 ├── launch/main.launch.py       # Gazebo + MoveIt + RViz + node vẽ
 └── src/draw_letter.cpp         # Waypoint, lập kế hoạch, thực thi
-
+```
 Launch file `main.launch.py` dùng lại cấu hình của `ur_simulation_gz` và `ur_moveit_config`. Node dùng MoveIt `MoveGroupInterface` với group `ur_manipulator` và frame `base_link`.
 
 ## Build
